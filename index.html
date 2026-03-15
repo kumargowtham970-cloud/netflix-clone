@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix - Unlimited Movies, TV Shows, and More</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">STREAMFLIX</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+            <div id="auth-section" style="display: flex; align-items: center; gap: 10px;">
+                <!-- Dynamically populated by JS: either Sign In button or User Profile -->
+                <a href="auth.html" class="btn btn-play" style="padding: 5px 15px; font-size: 0.9rem;">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero"
+        style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
+        <div class="hero-vignette"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Stranger Things</h1>
+            <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret
+                experiments, terrifying supernatural forces and one strange little girl.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-play" id="main-play-btn"><i class="fas fa-play"></i> Play</button>
+                <button class="btn btn-more"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+        </div>
+        <div class="hero-fade-bottom"></div>
+    </header>
+
+    <!-- Movie Rows -->
+    <main class="main-content">
+
+        <!-- Row 1: Trending -->
+        <div class="movie-row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="row-container">
+                <button class="handle left-handle"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider">
+                    <!-- This will be dynamically populated by script.js -->
+                </div>
+                <button class="handle right-handle"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Row 2: Action -->
+        <div class="movie-row">
+            <h2 class="row-title">Action Thrillers</h2>
+            <div class="row-container">
+                <button class="handle left-handle"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider">
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">The Chase</h4>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">Velocity</h4>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1533928298208-27ff66555d8d?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">Rogue Protocol</h4>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">Code Red</h4>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">Nightfall</h4>
+                        </div>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?q=80&w=1000&auto=format&fit=crop"
+                            alt="Action">
+                        <div class="movie-info">
+                            <div class="movie-actions">
+                                <i class="fas fa-play-circle"></i>
+                                <i class="fas fa-plus-circle"></i>
+                                <i class="far fa-thumbs-up"></i>
+                                <i class="fas fa-chevron-circle-down" style="margin-left: auto;"></i>
+                            </div>
+                            <h4 style="margin: 8px 0;">The Drop</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="handle right-handle"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StreamFlix. A Premium Clone Template.</p>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+
+            <div class="video-container">
+                <video id="netflix-video">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+
+            <!-- Custom Video Controls -->
+            <div class="custom-controls" id="custom-controls">
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="controls-main">
+                    <div class="controls-left">
+                        <button class="control-btn" id="play-pause-btn"><i class="fas fa-play"></i></button>
+                        <div class="volume-container">
+                            <button class="control-btn" id="mute-btn"><i class="fas fa-volume-up"></i></button>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+                        </div>
+                        <span class="time-display">
+                            <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                        </span>
+                    </div>
+                    <div class="controls-right">
+                        <button class="control-btn" id="zoom-out-btn" title="Zoom Out"><i
+                                class="fas fa-search-minus"></i></button>
+                        <button class="control-btn" id="zoom-in-btn" title="Zoom In"><i
+                                class="fas fa-search-plus"></i></button>
+                        <button class="control-btn" id="rotate-btn" title="Rotate Video"><i
+                                class="fas fa-redo"></i></button>
+                        <button class="control-btn" id="fullscreen-btn" title="Fullscreen"><i
+                                class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

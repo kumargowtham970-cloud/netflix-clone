@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #E50914;
+    --bg-color: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+.auth-wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-en-20240115-trifectadaily-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.auth-header {
+    padding: 20px 4%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.auth-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.auth-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+}
+
+.auth-box h2 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-box input[type="email"],
+.auth-box input[type="password"],
+.auth-box input[type="text"] {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.auth-box input:focus {
+    outline: none;
+    background-color: #454545;
+}
+
+.auth-submit {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.2s;
+}
+
+.auth-submit:hover {
+    background-color: #c90812;
+}
+
+.auth-helper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.auth-helper a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.auth-helper a:hover {
+    text-decoration: underline;
+}
+
+.auth-switch {
+    margin-top: 50px;
+    color: #737373;
+    font-size: 1rem;
+}
+
+.auth-switch span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.auth-switch span:hover {
+    text-decoration: underline;
+}
+
+.error-msg {
+    background-color: #e87c03;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.success-msg {
+    background-color: #46d369;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    display: none;
+}

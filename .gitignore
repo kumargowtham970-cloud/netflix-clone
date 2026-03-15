@@ -4,3 +4,6 @@ node_modules/
 uploads/
 videos/
 package-lock.json
+*.txt
+test_node.js
+server_current.log
